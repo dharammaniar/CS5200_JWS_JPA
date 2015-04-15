@@ -43,7 +43,7 @@ public class SiteDao {
 	@Path("/{id}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Site> updateSite(int siteId, Site site) {
+	public List<Site> updateSite(@PathParam("id") int siteId, Site site) {
 		em.getTransaction().begin();
 		site.setId(siteId);
 		em.merge(site);
@@ -68,7 +68,7 @@ public class SiteDao {
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Site> createSite(Site site) {
 		em.getTransaction().begin();
-		em.merge(site);
+		em.persist(site);
 		em.getTransaction().commit();
 		return findAllSites();
 	}
