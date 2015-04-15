@@ -17,13 +17,13 @@
 			alert("Hello from JQuery");
 			var site = {
 				"id" : 2,
-				"name" : "Site 2 Updated",
+				"name" : "Site 2 Updated Again",
 				"latitude" : 21.33,
 				"longitude" : 43.55
 			};
 			
 			//Create Site
-			/* $.ajax({
+			 /* $.ajax({
 				url: "/CS5200_JWS_JPA/api/site",
 				type: "post",
 				dataTpe: "json",
@@ -32,12 +32,12 @@
 				success: function(response) {
 					console.log("yahoo");
 				}
-			}); */
+			}); */ 
 			
 			
 			// Delete Site
-			/* $.ajax({
-				url: "/CS5200_JWS_JPA/api/site/3",
+			 /* $.ajax({
+				url: "/CS5200_JWS_JPA/api/site/4",
 				type: "delete",
 				//dataTpe: "json",
 				//contentType: "application/json; charset=utf-8",
@@ -45,9 +45,10 @@
 				success: function(response) {
 					console.log("yahoo");
 				}
-			}); */
+			}); */ 
 			
-			$.ajax({
+			// Update Site
+			/* $.ajax({
 				url: "/CS5200_JWS_JPA/api/site/2",
 				type: "put",
 				dataTpe: "json",
@@ -56,11 +57,11 @@
 				success: function(response) {
 					console.log("yahoo");
 				}
-			});
+			}); */
 			
 		});
-	</script> -->
-
+	</script>
+ -->
 
 </body>
 </html>
